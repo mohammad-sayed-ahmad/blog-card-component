@@ -24,4 +24,34 @@ body {
 
 .card {
   background: white;
+
+  box-sizing: border-box;
+  block-size: 32.625rem;
+  inline-size: 24rem;
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 1.25rem;
+  border: solid var(--gray-950) 1px;
+  box-shadow: 0.25rem 0.25rem;
+}
+
+.preview {
+  block-size: 200px;
+  border-radius: 10px;
+}
+
+.tag {
+  background: var(--custom-yellow);
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+
+  font-weight: 800;
+  font-size: 0.75rem;
+
+  border-radius: 0.25rem;
 }
