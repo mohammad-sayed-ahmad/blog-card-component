@@ -84,3 +84,13 @@ address > p{
   font-style: normal;
   font-weight: 800;
 }
+
+a {
+  color: var(--gray-950);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--custom-yellow);
+  
+}
