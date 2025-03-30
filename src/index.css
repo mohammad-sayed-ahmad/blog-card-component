@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   --custom-yellow: hsl(47, 88%, 63%);
   --gray-500: hsl(0, 0%, 42%);
@@ -8,7 +11,6 @@ body {
   font-size: 16px;
 
   block-size: 100vh; /* height */
-  margin: 0;
 
   display: flex;
   justify-content: center;
@@ -18,8 +20,8 @@ body {
 .card {
   background: white;
 
-  inline-size: 21rem; /* width */
-  block-size: 33rem; /* height */
+  inline-size: 24rem; /* width */
+  block-size: 32rem; /* height */
   padding: 1rem;
 
   border-radius: 2rem;
@@ -65,11 +67,20 @@ body {
   border-radius: 0.25rem;
 }
 
+address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
 address > img {
   block-size: 2rem;
   inline-size: 2rem;
 }
 
-* {
-  margin: 0;
+address > p{
+  font-style: normal;
+  font-weight: 800;
 }
