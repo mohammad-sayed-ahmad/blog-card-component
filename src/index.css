@@ -24,12 +24,52 @@ body {
 
   border-radius: 2rem;
   border: 1px solid var(--gray-950);
+  box-shadow: 0.5rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card img.preview {
+.card > img.preview {
   inline-size: 100%;
   block-size: min-content;
   object-fit: contain;
 
   border-radius: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+}
+
+.tags > span {
+  display: block;
+  background-color: var(--custom-yellow);
+
+  block-size: 1.5rem;
+  inline-size: 5rem;
+  padding: 0.25rem;
+
+  text-align: center;
+  font-weight: 800;
+
+  border-radius: 0.25rem;
+}
+
+address > img {
+  block-size: 2rem;
+  inline-size: 2rem;
+}
+
+* {
+  margin: 0;
 }
