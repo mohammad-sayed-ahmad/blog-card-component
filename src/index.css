@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
+  font-family: "Figtree", "Dubai", sans-serif;
 }
 body {
   --custom-yellow: hsl(47, 88%, 63%);
@@ -21,7 +27,7 @@ body {
   background: white;
 
   inline-size: 24rem; /* width */
-  block-size: 32rem; /* height */
+  /*block-size: 32rem; /* height */
   padding: 1rem;
 
   border-radius: 2rem;
@@ -31,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .card > img.preview {
@@ -45,6 +52,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  color: var(--gray-500);
+  
 }
 
 .tags {
@@ -56,6 +66,7 @@ body {
 .tags > span {
   display: block;
   background-color: var(--custom-yellow);
+  color: var(--gray-950);
 
   block-size: 1.5rem;
   inline-size: 5rem;
@@ -65,6 +76,10 @@ body {
   font-weight: 800;
 
   border-radius: 0.25rem;
+}
+
+.published-date {
+  color: var(--gray-950);
 }
 
 address {
@@ -92,5 +107,4 @@ a {
 
 a:hover {
   color: var(--custom-yellow);
-  
 }
